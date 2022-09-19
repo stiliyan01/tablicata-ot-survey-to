@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .optionsContainer {
+        display: flex;
+        flex-direction: row;
+        word-spacing: 3rem;
+        font-size: 2rem;
+      }
+      .optionsSpacing {
+        word-spacing: 1rem;
+        display: flex;
+        flex-direction: row;
+        padding-left: 2rem;
+        /* margin-left: 50px; */
+        align-items: baseline;
+      }
+
+      p {
+        margin-left: 20px;
+      }
+      .table {
+        position: absolute;
+        top: 20;
+        bottom: 20;
+        left: 10;
+        right: 10;
+        height: 90%;
+        width: 99%;
+        color: black;
+        font-size: 40px;
+      }
+      .span1 {
+        border-bottom: 2px dotted black;
+        padding-right: 18%;
+        margin-right: 10%;
+      }
+
+      .fontSize {
+        font-weight: bold;
+        padding-right: 0.4rem;
+      }
+      .largeFont {
+        font-size: 2rem;
+      }
+      .mediumFont {
+        font-size: 1.5rem;
+      }
+      .smallFont {
+        font-size: 1rem;
+      }
+      .fontColor {
+        font-weight: bold;
+        margin-right: 0.2rem;
+      }
+      .firstColor {
+        margin-left: 7rem;
+      }
+      .secondColor {
+        color: grey;
+      }
+      .line {
+        color: grey;
+      }
+
+      .yellow {
+        border-bottom: 1rem solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="optionsContainer">
+      <span class="optionsSpacing">
+        <span class="fontSize largeFont">A</span>
+        <span class="fontSize mediumFont">A</span>
+        <span class="fontSize smallFont">A</span>
+
+        <span class="fontColor firstColor">A</span>
+        <span class="fontColor secondColor">/</span>
+        <span class="fontColor secondColor">A</span>
+      </span>
+    </div>
+
+    <table
+      class="table"
+      id="table"
+      border="2"
+      style="border-collapse: collapse"
+    >
+      <thead>
+        <tr>
+          <td>
+            <span>Mystery Shop</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="font-weight: bold; word-spacing: 0%">
+            <span class="span1">Location:</span>
+            <span class="span1">Date:</span>
+            <span class="span1">Time:</span>
+          </td>
+        </tr>
+      </thead>
+    </table>
+
+    <script src="app.js"></script>
+  </body>
+</html>
